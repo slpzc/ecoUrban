@@ -1,0 +1,36 @@
+{
+  "name": "ecourbanapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@2gis/mapgl": "^1.38.1",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@tanstack/react-query": "^4.32.6",
+    "2gis-maps": "^3.7.3",
+    "axios": "^1.4.0",
+    "babel-plugin-styled-components": "^2.1.4",
+    "cookies-next": "^2.1.2",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.12",
+    "express": "^4.18.2",
+    "next": "13.4.12",
+    "next-auth": "^4.22.5",
+    "node-sass": "^9.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "^8.1.2",
+    "react-scripts": "^5.0.1",
+    "react-spring": "^9.7.2",
+    "redux-thunk": "^2.4.2",
+    "sass": "^1.64.2",
+    "styled-components": "^6.0.7",
+    "swiper": "^10.1.0",
+    "vhost": "^3.0.2"
+  }
+}

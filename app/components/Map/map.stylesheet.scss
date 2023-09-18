@@ -1,0 +1,157 @@
+//@import 'https://unpkg.com/leaflet@1.4.0/dist/leaflet.css';
+.map-container {
+  width: 100%;
+  height: 100dvh;
+  //div{
+  //  height: 100dvh !important;
+  //}
+  position: absolute;
+  top: 0;
+  left: 0;
+  button{
+    display: none;
+  }
+   * {
+    z-index: 0;
+  }
+}
+.PopapIndustry{
+  position: absolute;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 250px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 300px;
+  padding: 20px;
+  p{
+    font-weight: 500;
+  }
+  button{
+    border: 1px solid #21201F;
+    background-color: transparent;
+    padding: 10px 20px;
+    &.active{
+      background-color: #13902C;
+    }
+  }
+  .reply{
+    margin-top: 20px;
+  }
+}
+span button{
+
+}
+.emmit{
+  position: absolute;
+
+}
+
+.address-container {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+@keyframes markerLoader {
+  0% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform:rotate(360deg);
+  }
+}
+.marker{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  padding: 4px;
+  margin: auto;
+  background-color: #fff;
+  transition: all .2s ease;
+  transform: translateY(-32px);
+  filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.7));
+  flex-shrink: 0;
+
+  &::before{
+    position: absolute;
+    content: "";
+    border-radius: 0 0 3px 3px;
+    bottom: -12px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-image: url('./Polygon.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 13px;
+
+  }
+  &.load{
+    transform: translateY(-42px);
+    width: 40px;
+    &::before{
+      background-image: none;
+      background-color: black;
+      height: 12px;
+      width: 4px;
+    }
+    .icon{
+      .loader {
+        width: 18px;
+        height: 18px;
+        border: 2px solid #FFF;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+      }
+
+      @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+  span{
+    padding-left: 8px;
+    color: #21201F;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 214.286% */
+    letter-spacing: -0.4px;
+    white-space: nowrap;
+  }
+  .icon{
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #13902C;
+    border-radius: 7px;
+  }
+
+
+}
