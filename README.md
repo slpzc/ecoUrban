@@ -1,3 +1,2 @@
-# This repository was frozen due to the irrelevance of the entire stack
-
+# From pulse: this repository was resolved by category in opped.json
 ..
