@@ -46,6 +46,7 @@ const MapComponent = () => {
 
     useEffect(() => {
         console.log('call func: [mapRender]');
+       // need cleanup when hotreload was exist
         mapRender();
     }, []);
 
